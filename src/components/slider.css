@@ -1,0 +1,62 @@
+#progress-bar-container {
+	position:relative;
+	width:100%;
+	margin:auto;
+	height:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	display: flex;
+	justify-content: space-between;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top: 11px;
+}
+
+#progress-bar-container li {
+	list-style:none;
+	cursor:pointer;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+#progress-bar-container #line {
+	width:100%;
+	/*margin:auto;*/
+	background: #2E2D2D;
+	height:20px;
+	position:absolute;
+	/*left:10%;*/
+	top:20px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+#progress-bar-container #line-progress {
+	height:100%;
+	background: #FFD84E;	 
+	background: linear-gradient(180deg, #FFD84E 31.25%, #F6722E 71.87%);; 
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+
+
+.tabImg{
+	width: 30%;
+}

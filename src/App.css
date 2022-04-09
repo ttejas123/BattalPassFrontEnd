@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*margin: 2000px;*/
+  height: 450px;
 }
 
 .App-logo {
@@ -35,4 +40,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.startOFG{
+  /*flex: 0.1;*/
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  background: #282c3c;
+  border-radius: 20px;
+}
+
+.newData{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.peroBadgeImg{
+  width: 37px;
+    position: absolute;
+    right: 83%;
+}
+
+.badgeCenterDiv{
+  position: relative;
+    width: 20%;
+    float: right;
 }
